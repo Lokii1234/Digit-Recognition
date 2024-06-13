@@ -62,7 +62,7 @@ cb = [es,mc]
 #train
 his = model.fit(X_train, y_train, epochs=5, validation_split=0.3, callbacks=cb)
 
-model_S  = keras.models.load_model("C:\\Users\\madin\\OneDrive\\Desktop\\digit recognition\\bestmodel.h5")
+model_S  = keras.models.load_model("bestmodel.h5") # bestmodel.h5 file path
 
 score = model_S.evaluate(X_test,y_test)
 print(f" the model accuracy is {score[1]}")
